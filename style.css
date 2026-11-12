@@ -1,0 +1,96 @@
+/* Abanoub Rezkalla - CS 310, Project 4 - Fall 2026 */
+/* Simple white page, cyan board, and black X/O symbols follow the assignment example. */
+
+/* PAGE STYLING */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 30px 12px;
+  background-color: white;
+  color: #111;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+
+#studentName {
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+
+/* LOGIN AREA */
+#login {
+  margin-bottom: 20px;
+}
+
+#login input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #999;
+  border-radius: 0;
+}
+
+#login button,
+#resetBtn {
+  padding: 8px 12px;
+  border: 1px solid #888;
+  border-radius: 0;
+  background-color: #eee;
+  color: #111;
+  cursor: pointer;
+}
+
+#login button:hover,
+#resetBtn:hover {
+  background-color: #ddd;
+}
+
+#login button:disabled,
+#resetBtn:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* ROLE AND TURN/WINNER DISPLAY */
+#role {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* GAME BOARD: CANVAS DRAWING SUPPLIES ITS BLUE CELLS AND BLACK GRID. */
+#board {
+  display: block;
+  width: 600px;
+  height: auto;
+  max-width: 100%;
+  margin: 20px auto 12px;
+  border: 3px solid #444;
+  box-sizing: border-box;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#resetBtn {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  #login input {
+    width: min(200px, 80vw);
+  }
+  #role {
+    font-size: 17px;
+  }
+  #status {
+    font-size: 20px;
+  }
+}

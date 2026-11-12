@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Abanoub Rezkalla - CS 310, Project 4 - Fall 2026 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Player Tic Tac Toe - Abanoub Rezkalla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Two Player Tic Tac Toe</h1>
+    <p id="studentName">Abanoub Rezkalla</p>
+
+    <!-- Name and password login used to assign one of the two player slots. -->
+    <div id="login">
+      <input id="nameInput" type="text" placeholder="First Name" aria-label="First Name" maxlength="40" autocomplete="given-name">
+      <input id="passwordInput" type="password" placeholder="Password" aria-label="Password" autocomplete="off">
+      <button id="joinBtn" type="button">Join Game</button>
+    </div>
+
+    <div id="role" aria-live="polite">Connecting to server...</div>
+    <div id="status" aria-live="polite">Waiting for game state...</div>
+
+    <!-- The blue board is a 600 x 600 HTML canvas as shown in Lecture 7. -->
+    <canvas id="board" width="600" height="600" aria-label="Tic-Tac-Toe game board"></canvas>
+    <button id="resetBtn" type="button">Reset Game</button>
+    <script src="client.js"></script>
+  </main>
+</body>
+</html>
